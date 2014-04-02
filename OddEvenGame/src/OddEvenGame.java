@@ -11,15 +11,15 @@ public class OddEvenGame {
 			String user = input.nextLine();
 			System.out.printf("Try to guess if the number given by the computer is ''Even'' or ''Odd''.\n");
 			if ((pc == 2 || pc == 4 || pc == 6 || pc == 8 || pc == 10) && user.equals("Even")) {
-				System.out.printf("The number was %d.You have guessed %s. You win.\n", pc , user);
+				System.out.printf("The number was %d.You have guessed %s. You win.\n\n", pc , user);
 				win++;
 			}
 			else if ((pc == 1 || pc == 3 || pc == 5 || pc == 7 || pc == 9) && user.equals("Odd")) {
-				System.out.printf("The number was %d.You have guessed %s. You win.\n", pc , user );
+				System.out.printf("The number was %d.You have guessed %s. You win.\n\n", pc , user );
 				win++;
 			}
 			else {
-				System.out.printf("The number was %d.You have guessed %s. You lose.\n", pc , user );
+				System.out.printf("The number was %d.You have guessed %s. You lose.\n\n", pc , user );
 				loss++;
 			}
 				System.out.printf("Do you wish to continue?\nType 'Yes' or 'No'.\nYour score will be shown when you type 'No'\n");
