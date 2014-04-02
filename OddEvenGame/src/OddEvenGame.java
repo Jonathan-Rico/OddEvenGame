@@ -22,11 +22,12 @@ public class OddEvenGame {
 				System.out.printf("The number was %d.You have guessed %s. You lose.\n", pc , user );
 				loss++;
 			}
-				System.out.printf("Do you wish to continue?\nType 'Yes' or 'No'\n");
+				System.out.printf("Do you wish to continue?\nType 'Yes' or 'No'.\nYour score will be shown when you type 'No'\n");
 			String cont = input.nextLine();
 			
 			if (cont.equals("No")) {
 				System.out.printf("You have won %d time(s). You have lost %d time(s).\n", win , loss);
+				i = 1000;
 			}
 		}
 	}
